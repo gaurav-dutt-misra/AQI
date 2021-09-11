@@ -1,0 +1,42 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>HOUSE PRICE PREDICTIONS</title>
+        <link rel="stylesheet" href="{% static 'final.css'%}">
+        <style>
+            span{
+                margin-left: 0%;
+            }
+            form{
+                margin-left: 20%;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="d1">
+            <a href="../">HOME</a>
+            <a href="index">PREDICT</a>
+        </div>
+        <img src="{% static 'HOUSE2.png' %}" alt="no image">
+        <p style="color: red;">Hello <strong>{{name}}</strong> Enter the features</p>
+        <form action="analyse" method="post"> {% csrf_token %}
+            <span>City-: </span><input type="number" name="longitude" style="margin-left: 20%;"> <br>
+            <span>PM2.5-:</span><input type="number" name="latitude"  style="margin-left: 23%;"><br>
+            <span>PM10:- </span><input type="number" name="housing_median_age" style="margin-left: 16%;"><br>
+            <span>NO:- </span> <input type="number" name="total_rooms"  style="margin-left: 5%;"><br>
+            <span>NO2:- </span><input type="number" name="total_bed_rooms" > <br>
+            <span>NOx:- </span><input type="number" name="population" style="margin-left: 10%;"><br>
+            <span>NH3:- </span><input type="number" name="households" style="margin-left: 7%;"><br>
+            <span>CO:- </span> <input type="number" name="median_income" style="margin-left: 14%;"><br>
+            <span>SO2:- </span><input type="number" name="rooms_per_household" style="margin-left: 9%;"><br>
+            <span>O3d:- </span><input type="number" name="population_per_household" style="margin-left: 4%;"><br>
+            <span>Benzene:- </span><input type="number" name="bedrooms_per_room" style="margin-left: 9%;"><br>
+            <span>Toluene:- </span><input type="number" name="OCEAN"><br>
+            <span>Xylene:- </span><input type="number" name="INLAND"><br>
+            <button type="submit" style="font-size: 200%; margin-left:20%;">Predict</button>
+            
+        </form>
+    </body>
+</html>

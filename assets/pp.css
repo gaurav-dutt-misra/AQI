@@ -1,0 +1,49 @@
+*{
+  background-color: rgb(255, 224, 158);
+}
+img{
+  width: 100%;
+
+}
+div{
+  height: 10%;
+  width: 100%;
+  position: fixed;
+  background: transparent;
+}
+div>a{
+  color: red;
+  font-size: 2vw;
+  margin: 7%;
+  padding: 1%;
+  display: inline;
+  background-color: rgb(255, 255, 255);
+  border-radius: 10%;
+}
+h1{
+  color: rgb(0, 0, 0);
+  font-size: 3vw;
+  text-align: center;
+}
+p{
+  font-size: 2vw;
+  text-align: center;
+}
+a{
+  color: rgb(25, 0, 255);
+  font-size: 2vw;
+  margin-left: 40%;
+  padding: 1%;
+  display: inline;
+  background-color: rgb(255, 255, 255);
+  border-radius: 10%;  
+}
+form{
+  margin-left: 30%;
+}
+.s1{
+ width: 20%;
+ font-size: 2vw;
+ margin-left: 17%;
+
+}
